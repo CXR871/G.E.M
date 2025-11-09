@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>钢琴社招新网</title>
+    <style>
+        /* 基础样式优化，让页面更美观 */
+        body { font-family: "Microsoft YaHei", sans-serif; line-height: 1.8; margin: 0; padding: 0; }
+        .top-nav { background: #f5f5f5; padding: 15px; text-align: center; }
+        .top-nav a { margin: 0 20px; text-decoration: none; color: #333; font-size: 18px; }
+        .top-nav a:hover { color: #2c3e50; font-weight: bold; }
+        .container { width: 1200px; margin: 0 auto; padding: 20px; }
+        .section { margin: 80px 0; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2c3e50; text-align: center; margin-bottom: 40px; }
+        table { width: 100%; border-collapse: collapse; margin: 30px 0; }
+        th, td { border: 1px solid #ddd; padding: 15px; text-align: center; }
+        th { background: #f8f9fa; }
+        .back-top { display: inline-block; margin: 20px 0; padding: 10px 20px; background: #2c3e50; color: #fff; text-decoration: none; border-radius: 4px; }
+        .back-top:hover { background: #34495e; }
+        .form-table { width: 80%; margin: 0 auto; }
+        .form-table td { text-align: left; }
+        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .submit-btn { text-align: center; margin-top: 30px; }
+        .submit-btn input { width: 150px; margin: 0 10px; cursor: pointer; }
+        img { display: block; margin: 0 auto; width: 60%; border-radius: 8px; cursor: pointer; transition: transform 0.3s; }
+        img:hover { transform: scale(1.02); }
+        embed { display: block; margin: 0 auto; width: 80%; height: 400px; }
+    </style>
+</head>
+<body>
+    <!-- 1. 背景音乐（左上角） -->
+    <div style="position: absolute; top: 20px; left: 20px;">
+      <audio id="bgm" src="./微信视频2025-11-09_180826_773.mp3" preload="auto">你的浏览器不支持音频播放</audio>
+        <button onclick="document.getElementById('bgm').play()">▶ 播放背景音乐</button>
+    </div>
+
+    <!-- 2. 顶部导航（一键跳转+返回顶部） -->
+    <div class="top-nav">
+        <a href="#intro">社团简介</a>
+        <a href="#activity">活动安排</a>
+        <a href="#show">风采展示</a>
+        <a href="#story">社员故事</a>
+        <a href="#apply">在线报名</a>
+    </div>
+
+    <div class="container">
+        <!-- 社团简介 -->
+        <section id="intro" class="section">
+            <h2>钢琴社 社团简介</h2>
+            <p>钢琴社成立于2010年，是学校历史最悠久、规模最大的乐器类社团之一。十余年来，我们始终秉持“以琴会友，以乐传情”的宗旨，致力于为所有热爱钢琴的同学搭建学习、交流与展示的平台。无论你是零基础的钢琴小白，还是拥有多年演奏经验的进阶玩家，都能在这里找到属于自己的位置。</p>
+            <p>社团现有注册社员200余人，涵盖大一至研究生各个年级。我们拥有专业的钢琴教学场地，配备3台立式钢琴和1台三角钢琴，满足日常练习与活动需求。核心指导团队包括学校音乐系专业教师2名、校外钢琴演奏家3名，以及连续3年获得省级钢琴比赛奖项的学长学姐，为社员提供从基础乐理到高阶演奏技巧的全方位指导。</p>
+            <p>日常活动丰富多样，包括每周2次的基础乐理课、每周1次的分组练习、每月1次的主题演奏会、每学期2次的校外交流活动，以及年度大型钢琴音乐会。我们还会组织社员参与校园文化节、社区公益演出、高校钢琴社团联谊等活动，让大家在实践中提升技能、拓宽视野、收获友谊。</p>
+            <p>社团注重个性化培养，针对不同基础的社员制定分层教学计划：零基础组从识谱、指法、节奏教起，帮助社员快速入门；进阶组聚焦曲目精修、演奏技巧提升，培养舞台表现力；高阶组则提供原创作品指导、比赛备赛培训，支持社员参加各类专业赛事。成立至今，社团累计培养出50余名省级以上钢琴比赛获奖者，10余名社员毕业后从事音乐教育、演奏相关工作。</p>
+            <p>在这里，你不仅能学到专业的钢琴知识，更能遇见一群志同道合的朋友。我们会一起在琴房度过安静的练习时光，一起为筹备音乐会熬夜排练，一起分享演奏中的喜怒哀乐。钢琴社不仅是一个兴趣社团，更是一个温暖的大家庭。无论你是想掌握一项新技能，还是想寻找一个展示自我的舞台，或是单纯想在音乐中放松身心，钢琴社都欢迎你的加入！</p>
+            <a href="#" class="back-top">返回顶部</a>
+        </section>
+
+        <!-- 活动安排（跨行列表格） -->
+        <section id="activity" class="section">
+            <h2>钢琴社 2025年春季学期活动安排表</h2>
+            <table>
+                <tr>
+                    <th colspan="4">钢琴社 2025年春季学期活动安排表</th>
+                </tr>
+                <tr>
+                    <th>活动名称</th>
+                    <th>时间</th>
+                    <th>地点</th>
+                    <th>参与对象</th>
+                </tr>
+                <tr>
+                    <td>新成员见面会</td>
+                    <td>3月10日 19:00-21:00</td>
+                    <td rowspan="2">大学生活动中心3楼钢琴教室</td>
+                    <td>全体新社员</td>
+                </tr>
+                <tr>
+                    <td>钢琴基础教学公开课</td>
+                    <td>3月17日 19:00-21:00</td>
+                    <td>零基础社员</td>
+                </tr>
+                <tr>
+                    <td>“春日序曲”主题演奏会</td>
+                    <td>4月20日 18:30-20:30</td>
+                    <td>学校礼堂</td>
+                    <td>全体社员</td>
+                </tr>
+                <tr>
+                    <td>高校钢琴社团联谊活动</td>
+                    <td>5月11日 9:00-16:00</td>
+                    <td>隔壁大学音乐厅</td>
+                    <td>进阶组、高阶组社员</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">年度钢琴音乐会</td>
+                    <td>6月15日 14:00-16:00</td>
+                    <td>学校大剧院</td>
+                    <td>全体社员</td>
+                </tr>
+                <tr>
+                    <td>6月15日 19:00-21:00</td>
+                    <td>学校大剧院</td>
+                    <td>全校师生</td>
+                </tr>
+            </table>
+            <a href="#" class="back-top">返回顶部</a>
+        </section>
+
+        <!-- 风采展示（图片+超链接跳转） -->
+        <section id="show" class="section">
+            <h2>钢琴社 风采展示</h2>
+            <p>以下是社员日常排练、演奏会现场的精彩瞬间，点击图片可查看详细活动介绍：</p>
+            <a href="job003（2）.html" target="_blank">
+        <img src="./微信图片_20251109175338_46_158.jpg" alt="钢琴社日常演奏照片">
+    </a>
+            <p style="text-align: center; margin-top: 10px;">照片说明：2024年秋季学期“秋日私语”主题排练现场，社员们分组合作演奏经典曲目</p>
+            <a href="#" class="back-top">返回顶部</a>
+        </section>
+
+        <!-- 导入视频 -->
+        <section class="section">
+            <h2>钢琴社 活动精彩回顾</h2>
+            <embed src="./微信视频2025-11-09_180153_532.mp4" type="video/mp4">
+            <a href="#" class="back-top">返回顶部</a>
+        </section>
+
+        <!-- 社员故事 -->
+        <section id="story" class="section">
+            <h2>钢琴社 社员故事（节选）</h2>
+            <p>我是大二计算机专业的邓紫棋，加入钢琴社之前，我对钢琴的认知仅限于“看起来很难”的乐器。高考结束后，我一直想学习一项乐器，但因为没有基础，又担心自己学不会，迟迟没有行动。大一开学时，看到钢琴社的招新摊位，学长学姐们现场演奏的《卡农》瞬间击中了我，我鼓起勇气报了名，没想到这成为了我大学生活中最正确的决定之一。</p>
+            <p>刚加入时，我连五线谱都不认识，手指放在琴键上僵硬得像木棍。第一次上基础课时，看着身边有些同学已经能弹奏简单的曲目，我特别自卑，甚至想过放弃。但指导老师看出了我的焦虑，她告诉我：“钢琴学习没有捷径，但只要坚持，每个人都能弹出好听的曲子。”社长也经常鼓励我，还特意安排了一位耐心的学姐一对一辅导我。</p>
+            <p>从识谱、练习单音，到弹奏简单的练习曲，再到完整的曲目，我用了整整一个学期的时间。每天晚上下课后，我都会去钢琴教室练习1-2小时，虽然过程很枯燥，手指也经常酸痛，但当我第一次完整弹出《小星星》时，那种成就感无法用语言形容。大二上学期，我报名参加了社团的“春日序曲”演奏会，弹奏了一首《致爱丽丝》。上台前我紧张得手心冒汗，但当指尖触碰到琴键，熟悉的旋律流淌出来，我慢慢沉浸在音乐中，完全忘记了紧张。演出结束后，台下的掌声让我热泪盈眶，我知道，这是对我坚持的最好回报。</p>
+            <p>在钢琴社的两年里，我不仅学会了弹奏10多首经典曲目，更收获了珍贵的友谊。我们会一起在琴房排练到深夜，一起为了音乐会的筹备分工合作，一起分享学习中的难题和进步。记得有一次，我因为准备期末考试，很久没有练习钢琴，手指变得生疏，心情特别低落。社团的朋友们发现后，主动陪我一起练习，帮我纠正指法、调整节奏，让我重新找回了信心。</p>
+            <p>现在的我，已经能独立弹奏《梦中的婚礼》《蓝色多瑙河》等难度较高的曲目，还加入了社团的进阶组，跟着指导老师学习即兴伴奏。钢琴不仅成为了我生活中的一部分，更教会了我坚持和专注。它让我明白，任何事情只要付出努力，就一定会有收获。如果你也热爱音乐，如果你也想学习钢琴，无论你是否有基础，钢琴社都欢迎你。在这里，你会遇见更好的自己，也会收获一段难忘的青春回忆。</p>
+            <a href="#" class="back-top">返回顶部</a>
+        </section>
+
+        <!-- 在线报名（表单+表格） -->
+        <section id="apply" class="section">
+            <h2>钢琴社 在线报名表</h2>
+            <form action="" method="post">
+                <table class="form-table">
+                    <tr>
+                        <td>1. 姓名</td>
+                        <td><input type="text" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>2. 性别</td>
+                        <td>
+                            <input type="radio" name="gender" value="男" required> 男
+                            <input type="radio" name="gender" value="女"> 女
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3. 出生日期</td>
+                        <td>
+                            <input type="text" name="birthYear" placeholder="年" required>
+                            <input type="text" name="birthMonth" placeholder="月" required>
+                            <input type="text" name="birthDay" placeholder="日" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4. 手机</td>
+                        <td><input type="text" name="phone" required></td>
+                    </tr>
+                    <tr>
+                        <td>5. 邮箱</td>
+                        <td><input type="text" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>6. 是否有钢琴基础</td>
+                        <td>
+                            <input type="radio" name="base" value="有" required> 有
+                            <input type="radio" name="base" value="无"> 无
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7. 兴趣方向（可多选）</td>
+                        <td>
+                            <input type="checkbox" name="interest" value="基础演奏"> 基础演奏
+                            <input type="checkbox" name="interest" value="进阶曲目"> 进阶曲目
+                            <input type="checkbox" name="interest" value="即兴伴奏"> 即兴伴奏
+                            <input type="checkbox" name="interest" value="舞台表演"> 舞台表演
+                            <input type="checkbox" name="interest" value="音乐创作"> 音乐创作
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8. 年级</td>
+                        <td>
+                            <select name="grade" required>
+                                <option value="">请选择年级</option>
+                                <option value="大一">大一</option>
+                                <option value="大二">大二</option>
+                                <option value="大三">大三</option>
+                                <option value="大四">大四</option>
+                                <option value="研究生">研究生</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9. 自我介绍</td>
+                        <td><textarea name="intro" rows="5" placeholder="请简单介绍自己、以及加入钢琴社的理由……" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>10. 是否服从活动安排</td>
+                        <td>
+                            <input type="radio" name="obey" value="是" required> 是
+                            <input type="radio" name="obey" value="否"> 否
+                        </td>
+                    </tr>
+                </table>
+                <div class="submit-btn">
+                    <input type="submit" value="提交报名">
+                    <input type="reset" value="重置表单">
+                </div>
+            </form>
+            <a href="#" class="back-top">返回顶部</a>
+        </section>
+    </div>
+</body>
+</html>
